@@ -1,0 +1,42 @@
+
+@mixin badge() {
+    color: black;
+    background-color: $theme-secondary-color;
+    padding: 1rem;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+  }
+  
+  @mixin flex_justify_between($padding) {
+    display: flex;
+    justify-content: space-between;
+    padding: $padding;
+    align-items: center;
+  }
+  
+  @mixin hover-active($bg , $color) {
+      &:hover {
+         background-color: $bg;
+          color:$color;
+      }
+      
+    }
+  
+    @mixin create_button(
+      $bd-color , 
+      $color , 
+      $padding , 
+      $radius , 
+      $hover-primary , 
+      $hover-secondary ,
+      $bg : none , 
+    ){
+      border: 1px solid $bd-color;
+      background: $bg;
+      color: $color;
+      padding: $padding;
+      border-radius: $radius;
+      @include hover-active( $hover-primary , $hover-secondary );
+    }
