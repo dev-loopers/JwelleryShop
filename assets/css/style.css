@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-container {
+  background-color: rgb(45, 45, 45);
+  background-image: url(../images/slider-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  color: #fff;
+}
+.hero-container .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+.hero-container .header .logo {
+  font-size: 20pt !important;
+  font-family: monospace;
+  font-weight: bolder;
+}
+.hero-container .header .logo a {
+  color: #fff;
+  text-decoration: none;
+}
+.hero-container .header .menu-toggle {
+  color: black;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  top: 1rem;
+  position: fixed;
+  right: 2rem;
+}
+
+.content {
+  width: 50%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 25px;
+}
+.content h1 {
+  font-size: 50pt;
+}
+.content p {
+  font-size: 15pt;
+  font-family: sans-serif;
+}
+.content .btn {
+  border: 1px solid rgb(255, 186, 198);
+  background: none;
+  color: rgb(255, 186, 198);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+.content .btn:hover {
+  background-color: rgb(255, 186, 198);
+  color: #fff;
+}
+
+.heading {
+  text-align: center;
+  margin: 3rem 2rem;
+}
+.heading h1 {
+  font-size: 24pt;
+}
+.heading .button {
+  border: 1px solid rgb(255, 186, 198);
+  background: rgb(255, 186, 198);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+}
+.heading .button:hover {
+  background-color: rgb(255, 186, 198);
+  color: #fff;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 2rem;
+  padding: 2rem;
+}
+.product-container .product {
+  background-color: rgb(224, 224, 224);
+  padding: 1rem;
+}
+.product-container .product .badge {
+  color: black;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+}
+.product-container .product .badge span {
+  font-weight: bold;
+}
+.product-container .product img {
+  height: auto;
+  width: 100%;
+}
+.product-container .product .product-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0 0 0;
+  align-items: center;
+}
+.product-container .product .product-footer .price .amount {
+  color: rgb(255, 186, 198);
+}/*# sourceMappingURL=style.css.map */
