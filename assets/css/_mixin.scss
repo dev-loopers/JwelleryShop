@@ -18,8 +18,8 @@
   
   @mixin hover-active($bg , $color) {
       &:hover {
-         background-color: $bg;
-          color:$color;
+         background-color: $bg!important;
+          color: $color!important;
       }
       
     }
@@ -39,4 +39,10 @@
       padding: $padding;
       border-radius: $radius;
       @include hover-active( $hover-primary , $hover-secondary );
+    }
+
+    @mixin grid($cols:50% 50% , $gap:1rem ){
+      display: grid;
+      grid-template-columns:$cols ;
+      gap: $gap ; 
     }
